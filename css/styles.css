@@ -6,85 +6,99 @@
 
     /* main colors */
 
-    --main-title-cl: color=#212121;
+    --main-title-cl:#212121;
     --main-text-cl: #757575;
     --btn-hover-focus-bgd: #2196F3;
+    --background: #fff;
+    --hero-footer-bcg: #2F303A;
+    --team-bcg: #F5F4FA;
+
 
 }
 
-body{
+body {
     font-family: var(--main-font), sans-serif;
-
+    letter-spacing: 0.03em;
+    font-size: 14px;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
 
-
-.header {
-    background: #FFFFFF;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .list {
     list-style: none;
-
 }
-    
+
 /* header */
 
-.header-logo{
+.header-logo {
     text-decoration: none;
     font-family: var(--secondary-font);
     font-weight: 700;
-        font-size: 26px;
-        line-height: 31px;
-        letter-spacing: 0.03em;
+    font-size: 26px;
+    line-height: 1.19;
+}
+
+.header {
+    letter-spacing: 0.02em;
 }
 
 /* logo */
 
 .logoa {
-    color:#2196F3;
-    font-family:var(--secondary-font);
-    
+    color: #2196F3;
+    font-family: var(--secondary-font);
+
 
 }
 
 .logob {
-    color:#212121;
-    font-family:var(--secondary-font);
-    
+    color: #212121;
+    font-family: var(--secondary-font);
+
 }
 
 .link {
     text-decoration: none;
     font-family: inherit;
+    
 }
 
 .header-link {
     font-weight: 500;
-        font-size: 14px;
-        line-height: 16px;
-        letter-spacing: 0.02em;
-        color:var(--main-title-cl)
+    line-height: 1.14px;
+    color: var(--main-title-cl);
 }
 
 .current {
-    color:#2196F3
+    color: var(--btn-hover-focus-bgd);
 }
 
 .header-link-contact {
     text-decoration: none;
     font-weight: 500;
-        font-size: 14px;
-        line-height: 16px;
-        letter-spacing: 0.02em;
-        color:var(--main-text-cl)
+    line-height: 1.14;
+    color: var(--main-text-cl);
 }
 
 .header-link-contact:hover,
 .header-link-contact:focus,
 .header-link:hover,
-.header-link:focus {
-    color:#2196F3
+.header-link:focus,
+.footer-link-contact:hover,
+.footer-link-adress:hover {
+    color: var(--btn-hover-focus-bgd);
 }
 
 
@@ -92,109 +106,109 @@ body{
 
 
 .hero {
-    background: #2F303A;
+    background: var(--hero-footer-bcg);
 }
 
 .hero-title {
-    color:#fff;
+    color: #fff;
     font-weight: 900;
-        font-size: 44px;
-        line-height: 60px;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
 }
 
 .hero-btn {
     font-weight: 700;
-        font-size: 16px;
-        line-height: 30px;
-    color:#fff;
+    font-size: 16px;
+    line-height: 1.875;
+    color: #fff;
     background-color: var(--btn-hover-focus-bgd);
 }
 
 /* секция наши преимущества */
 
 .benefits-title {
-    font-weight: 700;
-        font-size: 14px;
-        line-height: 16px;
-        color:var(--main-title-cl);
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--main-title-cl);
 }
 
 .benefits-about {
-    font-weight: 400;
-        font-size: 14px;
-        line-height: 24px;
-        color:va(--main-text-cl)
+    line-height: 1.71;
+    color: var(--main-text-cl);
 }
 
 /* секция чем мы занимаемся */
 
 .our-work-title {
-    font-weight: 700;
-        font-size: 36px;
-        line-height: 42px;
-        color:var(--main-title-cl)
+    font-size: 36px;
+    line-height: 1.16;
+    color: var(--main-title-cl);
 }
 
 /* Наша команда */
 
 .team {
-    background: #F5F4FA;
+    background: var(--team-bcg);
+}
+
+.team-title {
+        font-size: 36px;
+        line-height: 1.17px;
 }
 
 .team-item {
-    background: #fff;
+    background: var(--background);
+
 }
 
 .team-subtitle {
     font-weight: 500;
-        font-size: 16px;
-        line-height: 19px;
-        color:var(--main-title-cl)
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--main-title-cl)
 }
 
 .team-text {
-    font-weight: 400;
-        font-size: 16px;
-        line-height: 19px;
-        color: var(--main-text-cl)
+    font-size: 16px;
+    line-height: 1.19;
+    color: var(--main-text-cl);
 }
 
 /* footer */
 
 .footer {
-    background: #2F303A;
+    background: var(--hero-footer-bcg);
 }
 
 .footer-logo {
     text-decoration: none;
-        font-family: var(--secondary-font);
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 31px;
-        letter-spacing: 0.03em;
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
 }
 
 .logoc {
-    color:#fff;
-    font-family:var(--secondary-font);
+    color: #fff;
+    font-family: var(--secondary-font);
 }
 
 /* Контакты */
 
+.footer-adress {
+    font-style: normal;
+}
+
 .footer-link-adress {
-    font-weight: 400;
-        font-size: 14px;
-        line-height: 24px;
+    line-height: 1.71;
     text-decoration: none;
     color: #fff;
-
-
 }
 
 .footer-link-contact {
-    font-weight: 400;
-        font-size: 14px;
-        line-height: 24px;
+    line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
 
@@ -203,34 +217,38 @@ body{
 /* портфолио */
 
 .btn-item {
+    font-family: inherit;
     font-weight: 500;
-        font-size: 16px;
-        line-height: 26px;
-        text-align: center;
-        letter-spacing: 0.03em;
-color:var(--main-title-cl);
+    font-size: 16px;
+    line-height: 1.625;
+    text-align: center;
+    color: var(--main-title-cl);
+    letter-spacing: 0.03em;
 
+}
+
+.active {
+    background-color: var(--btn-hover-focus-bgd);
+    color:#fff
 }
 
 .btn-item:hover,
 .btn-item:focus {
     background: var(--btn-hover-focus-bgd);
-    color:#fff;
+    color: #fff;
 }
 
 .work-list-title {
-    font-weight: 700;
-        font-size: 18px;
-        line-height: 36px;
-        letter-spacing: 0.06em;
-        color:var(--main-title-cl)
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--main-title-cl);
 }
 
 .work-text {
-    font-weight: 400;
-        font-size: 16px;
-        line-height: 30px;
-        letter-spacing: 0.03em;
-        color:var(--main-text-cl);
+    font-size: 16px;
+    line-height: 1.875;
+    color: var(--main-text-cl);
 }
+
 
