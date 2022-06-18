@@ -9,9 +9,12 @@
     --main-title-cl:#212121;
     --main-text-cl: #757575;
     --btn-hover-focus-bgd: #2196F3;
-    --background: #fff;
+    --background: #ffffff;
     --hero-footer-bcg: #2F303A;
     --team-bcg: #F5F4FA;
+    --hero-title-cl: #ffffff;
+    --footer-logo: #ffffff;
+    --footer-link-cl: #ffffff;
 
 
 }
@@ -20,6 +23,7 @@ body {
     font-family: var(--main-font), sans-serif;
     letter-spacing: 0.03em;
     font-size: 14px;
+    color: var(--main-title-cl);
 }
 
 .visually-hidden {
@@ -64,7 +68,7 @@ body {
 }
 
 .logob {
-    color: #212121;
+    color: var(--btn-hover-focus-bgd);
     font-family: var(--secondary-font);
 
 }
@@ -110,7 +114,8 @@ body {
 }
 
 .hero-title {
-    color: #fff;
+    text-transform: uppercase;
+    color: var(--hero-title-cl);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -121,7 +126,7 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.875;
-    color: #fff;
+    color: #ffffff;
     background-color: var(--btn-hover-focus-bgd);
 }
 
@@ -141,10 +146,9 @@ body {
 
 /* секция чем мы занимаемся */
 
-.our-work-title {
+.section-title{
     font-size: 36px;
     line-height: 1.16;
-    color: var(--main-title-cl);
 }
 
 /* Наша команда */
@@ -153,10 +157,7 @@ body {
     background: var(--team-bcg);
 }
 
-.team-title {
-        font-size: 36px;
-        line-height: 1.17px;
-}
+
 
 .team-item {
     background: var(--background);
@@ -166,8 +167,7 @@ body {
 .team-subtitle {
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
-    color: var(--main-title-cl)
+    line-height: 1.35;
 }
 
 .team-text {
@@ -191,7 +191,7 @@ body {
 }
 
 .logoc {
-    color: #fff;
+    color: var(--footer-logo);
     font-family: var(--secondary-font);
 }
 
@@ -204,7 +204,7 @@ body {
 .footer-link-adress {
     line-height: 1.71;
     text-decoration: none;
-    color: #fff;
+    color: var(--footer-link-cl);
 }
 
 .footer-link-contact {
@@ -229,20 +229,19 @@ body {
 
 .active {
     background-color: var(--btn-hover-focus-bgd);
-    color:#fff
+    color:#ffffff;
 }
 
 .btn-item:hover,
 .btn-item:focus {
     background: var(--btn-hover-focus-bgd);
-    color: #fff;
+    color: #ffffff;
 }
 
 .work-list-title {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: var(--main-title-cl);
 }
 
 .work-text {
